@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/secondpage_bg_imag2x">
+
+    <include layout="@layout/toobar_back"/>
+
+    <ImageView
+        android:id="@+id/iv_logo"
+        android:layout_width="197dp"
+        android:layout_height="53.67dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/logo" />
+    
+    <RelativeLayout
+        android:layout_width="280dp"
+        android:layout_height="352dp"
+        android:layout_below="@+id/iv_logo"
+        android:layout_marginTop="23dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/shape_round_scan_icon"
+        android:alpha="0.94">
+        <TextView
+            android:layout_width="96dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            android:layout_centerHorizontal="true"
+            android:text="@string/search_result"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="18sp"/>
+        
+        <TextView
+            android:id="@+id/number_of_car"
+            android:layout_width="64dp"
+            android:layout_height="22.33dp"
+            android:layout_marginTop="69dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:text="@string/number_of_car"/>
+        <TextView
+            android:id="@+id/name_of_owner"
+            android:layout_width="64dp"
+            android:layout_height="22.33dp"
+            android:layout_below="@+id/number_of_car"
+            android:layout_marginTop="34.33dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:text="@string/name_of_owner"/>
+        <TextView
+            android:id="@+id/phone_of_owner"
+            android:layout_width="64dp"
+            android:layout_height="22.33dp"
+            android:layout_below="@+id/name_of_owner"
+            android:layout_marginTop="32.67dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:text="@string/phone_of_owner"/>
+        <TextView
+            android:id="@+id/sector"
+            android:layout_width="64dp"
+            android:layout_height="22.33dp"
+            android:layout_below="@+id/phone_of_owner"
+            android:layout_marginTop="34dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:text="@string/sector"/>
+        
+        <LinearLayout
+            android:layout_width="168dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="64dp"
+            android:layout_marginStart="96dp"
+            android:layout_marginLeft="96dp"
+            android:background="@drawable/shape_round_search_result">
+
+            <TextView
+                android:id="@+id/tv_number_of_car"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                style="@style/show_car_message_text"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="168dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="120dp"
+            android:layout_marginStart="96dp"
+            android:layout_marginLeft="96dp"
+            android:background="@drawable/shape_round_search_result">
+            <TextView
+                android:id="@+id/tv_name_of_owner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                style="@style/show_car_message_text"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="168dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="176dp"
+            android:layout_marginStart="96dp"
+            android:layout_marginLeft="96dp"
+            android:background="@drawable/shape_round_search_result">
+            <TextView
+                android:id="@+id/tv_phone_of_owner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                style="@style/show_car_message_text"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="168dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="232dp"
+            android:layout_marginStart="96dp"
+            android:layout_marginLeft="96dp"
+            android:background="@drawable/shape_round_search_result">
+            <TextView
+                android:id="@+id/tv_sector"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                style="@style/show_car_message_text"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/ibtn_ring"
+        android:background="@null"
+        android:layout_width="48.77dp"
+        android:layout_height="48.77dp"
+        android:layout_below="@+id/iv_logo"
+        android:layout_marginTop="350.63dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/phone_ringing"
+        android:scaleType="fitCenter" />
+    <include layout="@layout/footer_main"/>
+</RelativeLayout>

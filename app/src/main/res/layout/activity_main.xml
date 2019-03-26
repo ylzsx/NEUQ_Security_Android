@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/secondpage_bg_imag2x"
+    android:orientation="vertical"
+    tools:context="cn.fhypayaso.security.business.MainActivity">
+    <include layout="@layout/header_search"/>
+    <ImageView
+        android:layout_width="197dp"
+        android:layout_height="53.67dp"
+        android:src="@drawable/logo"
+        android:layout_marginTop="80dp"
+        android:layout_gravity="center"
+        />
+
+    <RelativeLayout
+        android:background="@drawable/shape_round_scan_icon"
+        android:alpha="0.801"
+        android:layout_marginTop="58.33dp"
+        android:layout_gravity="center"
+        android:layout_width="248dp"
+        android:layout_height="248dp">
+
+        <ImageButton
+            android:id="@+id/btn_scan_two_bars"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_marginStart="54dp"
+            android:layout_marginLeft="54dp"
+            android:layout_marginTop="45.33dp"
+            android:src="@drawable/scan_icon"
+            android:background="@color/white"
+            />
+
+        <TextView
+            android:layout_width="114.67dp"
+            android:layout_height="19.67dp"
+            android:text="@string/scan_two_bar_tip"
+            android:layout_below="@+id/btn_scan_two_bars"
+            android:layout_marginTop="27dp"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:textColor="#FF9B9B9B"
+            android:textSize="14sp"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/logout"
+            android:textColor="@color/white"/>
+        <View
+            android:layout_width="55dp"
+            android:layout_height="1px"
+            android:background="@color/white"/>
+    </LinearLayout>
+
+
+    <include layout="@layout/footer_main"/>
+</LinearLayout>
